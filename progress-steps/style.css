@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --line--border--color: crimson;
+    --line--border--empty-line--color: gray;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.continer{
+    text-align: center;
+}
+
+.progress-continer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px; 
+    position: relative;  
+}
+
+.progress {
+    background-color: var(--line--border--color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 6px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.progress-continer::before{
+    content: '';
+    background-color: var(--line--border--empty-line--color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+.circle{
+    background-color: white;
+    display: flex;
+    border: 3px solid  var(--line--border--empty-line--color);
+    padding: 4px 12px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.circle-active{
+    border-color: var(--line--border--color);
+}
+
+.btn {
+    border: 2px solid;
+    padding: 12px 24px;
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--line--border--color);
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line--border--empty-line--color);
+    cursor: not-allowed;
+}
