@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope", "sans-serif";
+    background: linear-gradient(315deg, #100f10 , #0e0a20 );
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}   
+
+h3{
+    font-size: 1.5rem;
+    color: rgb(167, 167, 167);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.textarea{
+    position: relative;
+    border: none;
+    background: linear-gradient(45deg, #fafafa , #808080 );
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .1rem;
+    resize: none;
+    font-family: "Manrope", "sans-serif";
+}
+
+.textarea::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 33px 0px rgba(131,58,180,1);
+    transform: rotate(3deg);
+}
+
+#textarea::placeholder{
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 0;
+    letter-spacing: 0;
+    font-family: "Manrope", "sans-serif";
+    color: black;
+}
+
+#textarea:focus{
+    outline: none;
+}
+
+#tags{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 0vh;
+    width: 50%;
+}
+
+.tag {
+    background : linear-gradient(45deg, #fafafa , #808080 );
+    color: black;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0px 0px 20px 0px rgba(131,58,180,1), 0px 0px 20px 0px rgb(253, 29, 29), 0px 0px 20px 0px  rgba(252,176,69,1);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.highlight {
+    background : linear-gradient(45deg, #232323 , #808080 );
+}
+
+
