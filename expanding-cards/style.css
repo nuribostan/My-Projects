@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.conteiner {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    position: relative;
+    height: 80vh;
+    width: 5vw;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.7s ease-in;
+}
+
+.panel-active {
+    width: 65vw;
+}
+
+.title {
+   position: relative;
+   margin: 0;
+   bottom: 50px;
+   left: 80px;
+   cursor: pointer;
+   color: #fff;
+   font-size: 24px;
+   font-family: 'Dosis', sans-serif;
+   transition: all .7s ease-in;
+   opacity: 0;
+}
+
+.title-active h3 {
+    opacity: 1;
+}
+
+@media (max-width : 480px) {
+    .images:nth-last-child(1){
+        display: none;
+    }
+    .images:nth-last-child(2){
+        display: none;
+    }
+}
