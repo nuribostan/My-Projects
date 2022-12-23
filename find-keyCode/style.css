@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Raleway", "sans-serif";
+    background: rgb(36, 36, 36);
+    background: linear-gradient(315deg, rgba(36, 36, 36, 1) 0%, rgba(75, 48, 48, 1) 51%, rgba(0, 0, 0, 1) 100%);
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+
+.key {
+    display: inline-flex;
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin: 0 4rem;
+    min-width: 12rem;
+    background-color: rgba(0, 0, 0, .7);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.key small {
+    position: absolute;
+    top: -41px;
+    left: 5;
+    background-color: rgba(100, 13, 13,.7);
+    min-width: 12rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 21px -1px rgba(110,47,47,1);
+    
+}
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 40rem;
+    height: 6rem;
+    background-color: rgba(0, 0, 0, .7);
+    margin-top: 1rem;
+    border-radius: 10px;
+    text-shadow: 0px 0px 13px rgba(255, 0, 0, 1);
+}
+
+.bigKey {
+    transform: translate(30%,-20%);
+    font-size: 20rem;
+    text-shadow: 5px 5px 13px rgba(0, 0, 0, 1);
+    margin: 4rem 0;
+}
