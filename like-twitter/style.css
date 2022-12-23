@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope", "sans-serif";
+    background-color: #0d1117;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    width: 43rem;
+    height: 6rem;
+    background-color: #161b22;
+    color: #afb7bf;
+    margin: 2.1rem;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    border-radius: 2rem;
+    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box .ans{
+    display: none;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    width: 90%;
+    border: 0.1px solid #afb7bf;
+    border-radius: 30px;
+}
+
+.box:last-child::after{
+    display: none;
+}
+
+.box.active {
+    display: block;
+    height: 14rem;
+    padding-top: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.active .ans{
+    display: flex;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.active .ques{
+    font-weight: bold;
+}
+.box .fa-chevron-up {
+    transform: scale(0);
+}
+
+.box.active .fa-chevron-down{
+    transform: scale(0); 
+} 
+
+.box.active .fa-chevron-up{
+    transform: scale(1); 
+} 
+
+
+.btn {
+    position: absolute;
+    display: block;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #afb7bf;
+    cursor: pointer;
+}
+
