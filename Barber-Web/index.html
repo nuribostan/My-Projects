@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="background-image">
+            <div class="background-overlay">
+            </div>
+        </div>
+        <nav>
+            <div class="conteiner">
+                <div id="logo-box">
+                    <div class="logo">
+                        <a href="#"><img class="logos" src="images/70e4584e17e26648d01edb1660171abd.png"></a>
+                    </div>
+                </div>
+                <div id="total-menu">
+                    <ul>
+                        <li class="col">
+                            <a href="#" class="menu-item nav-icon"><i class="fa-solid fa-bars"></i> Menu</a>
+                        </li>
+                        <li class="col">
+                            <a href="#" class="menu-item">about us</a>
+                        </li>
+                        <li class="col">
+                            <a href="#" class="menu-item">our services</a>
+                        </li>
+                        <li class="col">
+                            <a href="#" class="menu-item">Our barbershop</a>
+                        </li>
+                        <li class="col">
+                            <a href="#" class="menu-item">contact</a>
+                        </li>
+                        <li class="col">
+                            <a href="#" class="menu-item">appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $(window).scroll(function () {
+                        var scroll = $(window).scrollTop();
+                        if (scroll > 50) {
+                            $("nav").css("background", "white");
+                            $(".menu-item").css("color", "black");
+                        }
+
+                        else {
+                            $("nav").css("background", "none");
+                            $(".menu-item").css("color", "white");
+                        }
+                    });
+
+
+                    $(".menu-item").hover(
+                        function () {
+                            $(this).addClass("orange");
+                        }, function () {
+                            $(this).removeClass("orange");
+                        }
+                    );
+                })
+            </script>
+        </nav>
+
+        <section id="main-page">
+            <div class="main-title ">
+                <div class="colum">
+                    <p class="title-text">You are only as good</p>
+                </div>
+                <div class="colum2">
+                    <p class="title-text">as last your</p>
+                </div>
+                <div class="colum">
+                    <p class="title-text">haircut.</p>
+                </div>
+            </div>
+
+            <div class="go-down">
+                <a id="down" href="#"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </section>  
+    </header>
+
+    <section id="about">
+        <div class="conteiner">
+            <div class="info">
+                <div class="about-col about-border">
+                    <i class="fa-solid fa-scissors"></i>
+                    <h3 class="info-title">Anatomical Haircut</h3>
+                    <p class="info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta commodi
+                        repudiandae dolores corrupti sint saepe, officia recusandae dicta blanditiis ipsum.</p>
+                </div>
+                <div class="about-col about-border">
+                    <i class="fa-solid fa-users"></i>
+                    <h3 class="info-title">Most
+                        Preferred</h3>
+                    <p class="info-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nisi ipsam
+                        sed quibusdam consectetur soluta.</p>
+                </div>
+                <div class="about-col about-border">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <h3 class="info-title">Most
+                        Rated</h3>
+                    <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat magnam cum
+                        error eum dolore? Nulla!</p>
+                </div>
+                <div class="about-col">
+                    <i class="fa-solid fa-mars"></i>
+                    <h3 class="info-title">For
+                        Man</h3>
+                    <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ea impedit.
+                        Consequuntur, corporis omnis tempora soluta necessitatibus quas excepturi in?</p>
+                </div>
+            </div>
+
+            <div id="about-section">
+                <div class="conteiner">
+                    <div class="about-section-col">
+                        <h3 class="about-section-title">About us</h3>
+                        <p class="about-section-title a-text">Enjoy the best design and function combined together</p>
+                        <p class="about-section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        <button class="btn">
+                            Get Started now
+                        </button>
+                    </div>
+                    <div class="about-section-col">
+                        <img src="images/ss.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
