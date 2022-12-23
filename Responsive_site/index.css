@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 5px;
+}
+
+body {
+    font-family: 'Antonio', sans-serif;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+.content p {
+    padding: 1.6rem;
+}
+
+.btn {
+    padding: 1rem 3.2rem;
+    background-color: #333;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    border: 0.1rem solid darkorange;
+    border-radius: 10px;
+    bottom: 1rem;
+    left: 3.68rem;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease-out;
+}
+
+.btn:hover::after {
+    transform: scaleX(1);
+}
+
+
+header {
+    height: 46rem;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .bg-images {
+    background-image: url(images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 18rem;
+    padding-bottom: 0;
+}
+
+#section-a {
+    background-color: #fff;
+    color: #333;
+    padding: 3.2rem 0;
+    line-height: 2.5;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#section-b{
+    padding: 3.2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.col-content{
+    padding: 3.2rem 0;
+}
+
+#section-b li{
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+
+.information{
+    background-color: #fff;
+    color: #333;
+    padding: 5rem 0;
+}
+
+.i-title{
+    padding-bottom: 2rem;
+}
+.a-title{
+    padding-bottom: 2rem;
+}
+.c-title{
+    padding-bottom: 2rem;
+}
+.box{
+    padding: 5rem;
+}
+
+.box:first-child{
+    background-color: darkslategray;
+    color: #fff;
+}
+
+footer{
+    padding: 4rem;
+    background-color: black;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.f-link{
+    text-transform: uppercase;
+}
+
+.f-link a{
+    color: yellowgreen;
+}
+
+.fa-camera{
+    font-size: 4rem;
+    padding-left: 1rem;
+}
+
+.fa-circle-info{
+    font-size: 4.5rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width:800px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 30%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
+
