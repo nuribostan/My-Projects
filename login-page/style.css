@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Raleway", "sans-serif";
+    background: rgb(36, 0, 25);
+    background: linear-gradient(315deg, rgba(36, 0, 25, 1) 0%, rgba(27, 8, 8, 1) 15%, rgba(75, 27, 28, 1) 37%, rgba(173, 115, 26, 1) 64%, rgba(7, 10, 10, 1) 93%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40rem;
+    height: 50rem;
+    border: 1px solid black;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 2px -1px 101px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px -1px 101px 1px rgba(0, 0, 0, 1);
+    box-shadow: 2px -1px 101px 1px rgba(0, 0, 0, 1);
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.container input {
+    position: relative;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 24rem;
+    height: 5rem;
+    padding-top: 3rem;
+    color: #fff;
+    outline: none;
+}
+
+input:valid {
+    outline: 0;
+}
+
+
+.email-box {
+    position: relative;
+}
+
+.email-placeholder {
+    position: absolute;
+    left: 0;
+    color: rgb(135, 135, 135);
+    font-size: 1.35rem;
+    transform: translateY(-150%);
+}
+
+.email-placeholder span {
+    display: inline-block;
+    transition: .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+#email:focus+.email-placeholder span {
+    transform: translateY(-150%);
+}
+
+
+#password:focus+.password-placeholder span {
+    transform: translateY(-200%);
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-placeholder {
+    position: absolute;
+    left: 0;
+    color: rgb(135, 135, 135);
+    font-size: 1.35rem;
+    transform: translateY(-150%);
+}
+
+.password-placeholder span {
+    display: inline-block;
+    transition: .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.container button {
+    margin-top: 2rem;
+    padding: 1.4rem 7rem;
+    color: #fff;
+    background-color: rgb(109, 51, 10);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+small {
+    font-size: 1.1rem;
+}
+
+small a {
+    color: coral;
+}
+
+button:hover {
+    background-color: rgb(52, 27, 10);
+}
+
+
